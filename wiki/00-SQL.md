@@ -11,8 +11,8 @@ ___
 
 ## Sommaire
 
-* [Algèbre relationelle](https://github.com/POEC-20-05/SQL/wiki/01)
-* [Definition](https://github.com/POEC-20-05/SQL/wiki/02)
-* [Alteration](https://github.com/POEC-20-05/SQL/wiki/03)
+* [Algèbre relationelle](https://github.com/POEC-20-05/SQL-FND/wiki/01)
+* [Definition](https://github.com/POEC-20-05/SQL-FND/wiki/02)
+* [Alteration](https://github.com/POEC-20-05/SQL-FND/wiki/03)
 
 ___

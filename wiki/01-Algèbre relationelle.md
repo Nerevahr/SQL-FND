@@ -10,7 +10,7 @@ ___
 
 Une base de données permet de stocker de l'information. Une BDD relationelle possède des tables à deux dimensions qui peuvent être reliées. Le langage SQL es utilisé dans la majorité des cas pour les piloter.
 
-![image](./resources/01/tables.png)
+![image](https://github.com/POEC-20-05/SQL-FND/tree/master/wiki/resources/01/tables.png)
 
 Ces bases de données sont stockées sur un serveur de base de données relationnelles SQL comme:
 * MariaDB

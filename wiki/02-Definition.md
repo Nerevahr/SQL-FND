@@ -134,7 +134,7 @@ mysql -u root my_database < my_database.sql
 La convention de nommage pour l'identifiant est la même que celle de la database.
 
 * Types et tailles
-![image](./resources/02/types.jpg)
+![image](https://github.com/POEC-20-05/SQL-FND/tree/master/wiki/resources/02/types.jpg)
 
 ```sql
 CREATE TABLE my_table(
