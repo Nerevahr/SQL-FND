@@ -2,7 +2,7 @@
 
 *  🔖 **Alteration**
 *  🔖 **Relations**
-*  🔖 **Migration**
+*  🔖 **Clef étrangère**
 
 ___
 
@@ -83,10 +83,6 @@ Une relation multivaleur détermine que pour chaque enregistrement d'une table, 
 ![image](https://raw.githubusercontent.com/POEC-20-05/SQL-FND/master/wiki/resources/03/manytomany.png)
 
 
-```sql
-ALTER TABLE my_table
-ADD FOREIGN KEY (other_table_id) REFERENCES other_table(id); 
-```
 
 ___
 
@@ -96,7 +92,14 @@ Créer un Entity Relation Diagram de votre base de données.
 
 ___
 
-## 📑 Migration
+## 📑 Clef étrangère
+
+La mise en place de la relation s'effectue via une contrainte de clef etrangère qui associe une colone d'une table A avec celle d'une table B. Les deux colonnes doivent posséder un index.
+
+```sql
+ALTER TABLE my_table
+ADD FOREIGN KEY (other_table_id) REFERENCES other_table(id); 
+```
 
 👨🏻‍💻 Manipulation
 
