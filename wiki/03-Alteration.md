@@ -62,25 +62,32 @@ Les tables peuvent être mises en relations par le biais de leur indexes. Nous a
 
 Une relation OneToMany est un type de cardinalité qui fait référence à la relation entre deux entités A et B dans laquelle un élément de A peut être lié à de nombreux éléments de B, mais un membre de B est lié à un seul élément de A.
 
-![image](https://github.com/POEC-20-05/SQL-FND/tree/master/wiki/resources/03/onetomany.jpg)
+![image](https://raw.githubusercontent.com/POEC-20-05/SQL-FND/master/wiki/resources/03/onetomany.jpg)
 
 ### 🏷️ **ManyToOne**
 
 La relation ManyToOne est l'inverse de la relation OneToMany.
 
-![image](https://github.com/POEC-20-05/SQL-FND/tree/master/wiki/resources/03/manytoone.png)
+![image](https://raw.githubusercontent.com/POEC-20-05/SQL-FND/master/wiki/resources/03/manytoone.png)
 
 ### 🏷️ **OneToOne**
 
 Une relation OneToOne est un type de cardinalité qui fait référence à la relation entre deux entités A et B dans lequel un élément de A ne peut être lié qu'à un seul élément de B, et vice versa.
 
-![image](https://github.com/POEC-20-05/SQL-FND/tree/master/wiki/resources/03/onetoone.png)
+![image](https://raw.githubusercontent.com/POEC-20-05/SQL-FND/master/wiki/resources/03/onetoone.png)
 
 ### 🏷️ **ManyToMany**
 
 Une relation multivaleur détermine que pour chaque enregistrement d'une table, il peut y avoir aucun, un ou plusieurs enregistrements d'une autre table qui lui soit liés
 
-![image](https://github.com/POEC-20-05/SQL-FND/tree/master/wiki/resources/03/manytomany.png)
+![image](https://raw.githubusercontent.com/POEC-20-05/SQL-FND/master/wiki/resources/03/manytomany.png)
+
+
+```sql
+ALTER TABLE my_table
+ADD FOREIGN KEY (other_table_id) REFERENCES other_table(id); 
+```
+
 ___
 
 👨🏻‍💻 Manipulation
