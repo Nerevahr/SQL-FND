@@ -42,6 +42,6 @@ ___
 
 Chaque membre d'équipe exporte son diagramme UML sous forme de fragment, il vérifie que son fragment contient bien tous les éléments de son diagramme puis il fait une pull request de son travail.
 
-Le Scrum master accepte les fusions, en synchronisant son repertoire loacal il récupère les fragments puis les importe dans un fichier principal contenant tous les diagrammes. Il pousse son travail et ses membres oivent synchroniser leur travail local.
+Le Scrum master accepte les fusions, en synchronisant son repertoire local il récupère les fragments puis les importe dans un fichier principal contenant tous les diagrammes. Il pousse son travail et ses membres doivent synchroniser leur travail local.
 
 ___
