@@ -280,6 +280,6 @@ ___
 
 👨🏻‍💻 Manipulation
 
-Réunissez les tables de chaque membre d'équipe dans la base de donées du projet
+Réunissez les tables de chaque membre d'équipe dans la base de données du projet
 
 ___
