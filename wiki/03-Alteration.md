@@ -17,7 +17,7 @@ Une fois crées vos tables peuvent être modifiées.
 * Ajouter une colonne
 
 ```sql
-ALTER TABLE my_table ADD COLUMN my_column INT) AFTER id;
+ALTER TABLE my_table ADD COLUMN my_column INT AFTER id;
 ```
 
 * Supprimer une colonne
@@ -100,6 +100,8 @@ La mise en place de la relation s'effectue via une contrainte de clef etrangère
 ALTER TABLE my_table
 ADD FOREIGN KEY (other_table_id) REFERENCES other_table(id); 
 ```
+
+___
 
 👨🏻‍💻 Manipulation
 
