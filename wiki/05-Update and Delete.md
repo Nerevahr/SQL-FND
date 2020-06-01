@@ -12,7 +12,7 @@ ___
 
 Vous pouvez mettre à jour vos résultats en utilisant le *Update Statement*.
 
-### 🏷️ **Modifier pluieurs lignes**
+### 🏷️ **Modifier plusieurs lignes**
 
 Pour modifier plusieurs colonnes, séparez les colonnes et affections par des virgules.
 
@@ -34,7 +34,7 @@ ___
 
 Vous pouvez mettre à jour vos résultats en utilisant le *Update Statement*.
 
-### 🏷️ **Supprimer pluieurs lignes**
+### 🏷️ **Supprimer plusieurs lignes**
 
 Pour modifier plusieurs colonnes, séparez les colonnes et affections par des virgules.
 
@@ -52,7 +52,7 @@ ___
 
 ## 📑 Imbrication
 
-Les opérations sont souvent dépendantes de sous opérations de lecture nottament.
+Les opérations sont souvent dépendantes de sous opérations de lecture notamment.
 
 Vous souhaitez par exemple mettre à jour une ligne de résultat qui dépend d'un résultat de lecture d'une autre.
 
@@ -66,7 +66,7 @@ WHERE id = (
 
 ### 🏷️ **In**
 
-L'opérateur In permet de mettre une condition d'égalité sur une liste de valeur.
+L'opérateur In permet de mettre une condition de présence dans une liste de valeur.
 
 ```sql
 UPDATE `client` SET id = id + 100
@@ -79,6 +79,6 @@ ___
 
 👨🏻‍💻 Manipulation
 
-Exécutez des mise à jour et suppression qui correspondent à votre logique métier.
+Tour par tour, exécutez des mise à jour et suppression qui correspondent à votre logique métier. Stockez ces requêtes.
 
 ___

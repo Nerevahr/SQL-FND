@@ -31,7 +31,7 @@ INSERT INTO `client` (
 );
 ```
 
-### 🏷️ **Inserer plusieurs lignes**
+### 🏷️ **Insérer plusieurs lignes**
 
 En spécifiant plusieurs regroupement de valeurs vous insérez plusieurs lignes.
 
@@ -53,7 +53,7 @@ ___
 
 ## 📑 Transaction
 
-Prennons le cas de la structure suivante.
+Prenons le cas de la structure suivante.
 
 ```sql
 CREATE TABLE `client` (
@@ -68,7 +68,7 @@ ADD FOREIGN KEY (client_id)
 REFERENCES client(id); 
 ```
 
-Lors de la création d'une entrée pour ces deux tables sans transaction, si l'insertion de address échoue et que l'insertion préalable de client réussit, il y aura un client qui ne possède pas d'adresse.
+Lors de la création d'une entrée pour ces deux tables sans transaction, si l'insertion de `address` échoue et que l'insertion préalable de client réussit, il y aura un client qui ne possède pas d'adresse.
 
 ⚠️ Foreign key constraint fail
 
@@ -94,7 +94,7 @@ INSERT INTO client (`name`) VALUES('John');
 INSERT INTO address (`client_id`) VALUES(999);
 ```
 
-Pour valider les enregitrements il faut engager leur exécution.
+Pour valider les enregistrements il faut engager leur exécution.
 
 ```sql
 COMMIT;
@@ -110,7 +110,7 @@ ___
 
 👨🏻‍💻 Manipulation
 
-Insérez des résultats dans deux tables liées en utilisant la transaction.
+Tour par tour, insérez des résultats dans deux tables liées en utilisant la transaction. Stockez ces requêtes.
 
 ___
 
@@ -128,7 +128,7 @@ All spécifie toutes les colonnes.
 ```sql
 SELECT * FROM `client`;
 ```
-### 🏷️ **Colonnnes spécifiques**
+### 🏷️ **Colonnes spécifiques**
 
 All spécifie toutes les colonnes.
 
@@ -162,7 +162,7 @@ Utilisé sans opérateurs et sans jointures vous êtes limités à toutes les li
 
 🔗 [clause](https://dev.mysql.com/doc/refman/8.0/en/select-optimization.html)
 
-Les clauses permettent d'affiner la selection
+Les clauses permettent d'affiner la sélection
 
 ### 🏷️ **Where**
 
@@ -238,7 +238,7 @@ SELECT * FROM `client` LIMIT 2;
 
 ### 🏷️ **Distinct**
 
-Pour ne pas avoir de répétion de valeur il faut utiliser distinct.
+Pour ne pas avoir de répétions de valeur il faut utiliser distinct.
 
 ```sql
 SELECT DISTINCT `name` FROM `client`;
@@ -246,7 +246,7 @@ SELECT DISTINCT `name` FROM `client`;
 
 ### 🏷️ **Group By**
 
-Pour éviter des répétitions tout en prennant en compte les lignes non selectionnées, groupe by permet de regrouper des résultat. Cette clause est csouvent associée à `distinct`.
+Pour éviter des répétitions tout en prenant en compte les lignes non sélectionnées, groupe by permet de regrouper des résultat. Cette clause est souvent associée à `distinct`.
 
 ```sql
 SELECT SUM(commande)
@@ -258,6 +258,6 @@ ___
 
 👨🏻‍💻 Manipulation
 
-Exécutez des selections qui correspondent à votre logique métier.
+Tour par tour, exécutez des sélections qui correspondent à votre logique métier. Stockez ces requêtes.
 
 ___
