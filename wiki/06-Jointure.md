@@ -11,22 +11,8 @@ ___
 
 Dans la cadre de tables en relations, la jointure permet de faire une selection sur plusieurs tables.
 
-![image](./resources/05/jointure.jpg)
+![image](https://raw.githubusercontent.com/POEC-20-05/SQL-FND/master/wiki/resources/05/jointure.jpg)
 
-### 🏷️ **Modifier pluieurs lignes**
-
-Pour modifier plusieurs colonnes, séparez les colonnes et affections par des virgules.
-
-```sql
-UPDATE `client` SET id = id + 10;
-```
-
-### 🏷️ **Modifier une ligne**
-
-```sql
-UPDATE `client` SET name = "Foo" 
-WHERE name = 'John';
-```
 ___
 
 ## 📑 Join
